@@ -1,0 +1,9 @@
+
+{
+"type": "object",
+"properties": {
+"status": { "type": "string" },
+"data": { "type": "string" }
+},
+"required": ["status", "data"]
+}

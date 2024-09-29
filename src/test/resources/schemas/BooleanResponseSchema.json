@@ -1,0 +1,17 @@
+{
+  "BooleanResponseSchema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "data": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "status",
+      "data"
+    ]
+  }
+}
