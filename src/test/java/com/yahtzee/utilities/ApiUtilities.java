@@ -7,14 +7,6 @@ import io.restassured.specification.RequestSpecification;
 import java.util.Map;
 
 public class ApiUtilities {
-    public static Response sendPutRequest(String endPoint, Map<String, Object> requestBody, RequestSpecification reqSpec) {
-        Response res = reqSpec.body(requestBody)
-                .when()
-                .put(endPoint)
-                .prettyPeek();
-
-        return res;
-    }
 
 
     public static int wordToInt(String word) {
