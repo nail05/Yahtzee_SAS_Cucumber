@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/yahtzee/stepDefinitions",
         dryRun = false,
-        tags = "",
+        tags = "@US01",
         publish = true
 
 )

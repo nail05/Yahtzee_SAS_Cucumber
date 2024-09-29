@@ -13,7 +13,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
-import java.sql.SQLOutput;
+
 import java.util.*;
 
 import static io.restassured.RestAssured.given;
@@ -27,8 +27,6 @@ public class API_StepDefs {
     String playerName;
     Map<String, Object> setPlayerNameBodyFalse;
     Map<String, Integer> dieReqBody;
-    List<Map<String, Integer>> allDieReqBodies = new ArrayList<>();
-    List<Map<String, Integer>> allDieResponseBodies = new ArrayList<>();
     List<Map<Integer, Integer>> valuesOfFiveDice;
     int id;
 
