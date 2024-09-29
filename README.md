@@ -10,14 +10,14 @@ Authentication for accessing the API endpoints is done using a userName and pass
 ## Features to Be Tested
 The following API endpoints are included in the test plan:
 
-GET /playerName: Retrieve the player's name.
-PUT /playerName: Update the player's name.
-GET /die/{id}: Retrieve the value of an individual die by its ID.
-PUT /die: Update the value of a die.
-POST /die/{id}: Roll an individual die.
-GET /dice: Retrieve the values of all dice.
-POST /rollDice: Roll all dice.
-GET /isYahtzee: Check if the dice result forms a Yahtzee.
+- GET /playerName: Retrieve the player's name.
+- PUT /playerName: Update the player's name.
+- GET /die/{id}: Retrieve the value of an individual die by its ID.
+- PUT /die: Update the value of a die.
+- POST /die/{id}: Roll an individual die.
+- GET /dice: Retrieve the values of all dice.
+- POST /rollDice: Roll all dice.
+- GET /isYahtzee: Check if the dice result forms a Yahtzee.
 ## Features Not to Be Tested
 Currently, no specific features are excluded from testing in this phase. (Includes only functional testing)
 
