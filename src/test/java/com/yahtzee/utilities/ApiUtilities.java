@@ -1,5 +1,6 @@
 package com.yahtzee.utilities;
 
+import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
@@ -46,4 +47,5 @@ public class ApiUtilities {
                 throw new IllegalArgumentException("Invalid dots representation: " + dots);
         }
     }
+
 }

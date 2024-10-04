@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0df5439f-ae68-455b-a3e7-fa45cb62cd78" name="Changes" comment="Changed ApiUtilities">
+    <list default="true" id="0df5439f-ae68-455b-a3e7-fa45cb62cd78" name="Changes" comment="ReadMe file updated 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/yahtzee/runner/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yahtzee/runner/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/yahtzee/stepDefinitions/API_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yahtzee/stepDefinitions/API_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yahtzee/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yahtzee/stepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yahtzee/utilities/ApiUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yahtzee/utilities/ApiUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US01_SetPlayerName.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US01_SetPlayerName.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US02_GetPlayerName.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US02_GetPlayerName.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,21 +73,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/oguz-/IdeaProjects/Yahtzee_SAS_Cucumber/src/test/resources/features",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oguz-/IdeaProjects/Yahtzee_SAS_Cucumber/src/test/resources/features&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\oguz-\IdeaProjects\Yahtzee_SAS_Cucumber\src\test\resources\features" />
@@ -221,7 +225,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727074239589</updated>
       <workItem from="1727074240658" duration="70354000" />
-      <workItem from="1727613937928" duration="7097000" />
+      <workItem from="1727613937928" duration="11809000" />
+      <workItem from="1727972844491" duration="27569000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <option name="closed" value="true" />
@@ -247,7 +252,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727616724875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ReadMe file updated">
+      <option name="closed" value="true" />
+      <created>1727626946242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727626946242</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ReadMe file updated 2">
+      <option name="closed" value="true" />
+      <created>1727627650974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727627650974</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +289,8 @@
     <MESSAGE value="Added project" />
     <MESSAGE value="Changed ApiUtilities project" />
     <MESSAGE value="Changed ApiUtilities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed ApiUtilities" />
+    <MESSAGE value="ReadMe file updated" />
+    <MESSAGE value="ReadMe file updated 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReadMe file updated 2" />
   </component>
 </project>

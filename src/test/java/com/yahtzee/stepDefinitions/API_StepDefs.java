@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -20,11 +21,11 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class API_StepDefs {
-
     Response res;
     ValidatableResponse valRes;
     RequestSpecification reqSpec;
-    String playerName;
+
+    static String expectedPlayerName;
     Map<String, Object> setPlayerNameBodyFalse;
     Map<String, Integer> dieReqBody;
     List<Map<Integer, Integer>> valuesOfFiveDice;
@@ -38,7 +39,7 @@ public class API_StepDefs {
 
     @When("I send GET request to {string} endpoint")
     public void ı_send_get_request_to_endpoint(String endPoint) {
-        Locale.setDefault(Locale.US);
+
         res = reqSpec.when()
                 .get(endPoint)
                 .prettyPeek();
@@ -106,32 +107,38 @@ public class API_StepDefs {
 
     @When("I send PUT request to {string} endpoint with a new player name")
     public void ıSendPUTRequestToEndpointWithANewPlayerName(String endPoint) {
-        Locale.setDefault(Locale.US);
+
+
         Map<String, String> playerNameBody = new HashMap<>();
         Faker faker = new Faker();
-        playerName = faker.name().firstName();
+        expectedPlayerName = faker.name().firstName();
 
-     System.out.println("playerName = " + playerName);
+        System.out.println("playerName = " + expectedPlayerName);
 
-        playerNameBody.put("name", playerName);
+        playerNameBody.put("name", expectedPlayerName);
         reqSpec.body(playerNameBody);
         res = reqSpec.when()
                 .put(endPoint)
                 .prettyPeek();
         valRes = res.then();
-    }
 
+
+
+    }
 
     @And("name field should match with the updated name")
     public void nameFieldShouldMatchWithTheUpdatedName() {
         JsonPath jp = res.jsonPath();
-        String actualPlayerName = jp.getString("name");
+        String actualPlayerName = jp.getString("data");
 
         System.out.println("actualPlayerName = " + actualPlayerName);
+        System.out.println("playerName = " + expectedPlayerName);
 
-        Assert.assertEquals("Player Name does not match,FAILED!!!", playerName, actualPlayerName);
+        Assert.assertEquals("Player Name does not match,FAILED!!!", expectedPlayerName, actualPlayerName);
         System.out.println("Name field matches with the updated name, SUCCESSFUL");
+
     }
+//
 
     @When("I send PUT request to {string} endpoint with an invalid player name integer")
     public void ıSendPUTRequestToEndpointWithAnInvalidPlayerNameInteger(String endPoint) {
@@ -273,7 +280,7 @@ public class API_StepDefs {
 
     @When("I send PUT request to {string} endpoint with {int} and {int}")
     public void ıSendPUTRequestToEndpointWithDieIDAndValue(String endpoint, int dieID, int value) {
-        Locale.setDefault(Locale.US);
+
         dieReqBody = new LinkedHashMap<>();
         dieReqBody.put("id", dieID);
         dieReqBody.put("value", value);
@@ -296,5 +303,6 @@ public class API_StepDefs {
     }
 
 
-
 }
+
+

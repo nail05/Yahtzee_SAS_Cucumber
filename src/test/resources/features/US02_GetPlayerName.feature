@@ -1,7 +1,7 @@
-@US02
+@US01
 Feature: As a user, I want to get the player name
 
-
+@wip
   Scenario: Get Player Name  via GET request-POSITIVE - EXPECTED-->200
     Given Accept header is "application/json"
     When I send GET request to "/playerName" endpoint
